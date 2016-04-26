@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCDC8083-6E7C-4059-9FA2-7BCD4766B331}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSBASSIST</RootNamespace>
+    <AssemblyName>GSBASSIST</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Fabric.Plugin, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajout_\Add_Equip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_\Add_Equip.Designer.cs">
+      <DependentUpon>Add_Equip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajout_\Add_Materiel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_\Add_Materiel.Designer.cs">
+      <DependentUpon>Add_Materiel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajout_\Add_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_\Add_Ticket.Designer.cs">
+      <DependentUpon>Add_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajout_\Add_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajout_\Add_User.Designer.cs">
+      <DependentUpon>Add_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet.cs">
+      <DependentUpon>gsbassistanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gsbassistanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet11.cs">
+      <DependentUpon>gsbassistanceDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gsbassistanceDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet21.cs">
+      <DependentUpon>gsbassistanceDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gsbassistanceDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gsbassistanceDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet4.cs">
+      <DependentUpon>gsbassistanceDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gsbassistanceDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gsbassistanceDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mail.cs" />
+    <Compile Include="Main_\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_\Incident_\Incident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_\Incident_\Incident.Designer.cs">
+      <DependentUpon>Incident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_\List_\List_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_\List_\List_User.Designer.cs">
+      <DependentUpon>List_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modif_\Mod_Equip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modif_\Mod_Equip.Designer.cs">
+      <DependentUpon>Mod_Equip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modif_\Mod_Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modif_\Mod_Ticket.Designer.cs">
+      <DependentUpon>Mod_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remove.cs" />
+    <Compile Include="Main_\Incident_\Resolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_\Incident_\Resolution.Designer.cs">
+      <DependentUpon>Resolution.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ajout_\Add_Equip.resx">
+      <DependentUpon>Add_Equip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajout_\Add_Materiel.resx">
+      <DependentUpon>Add_Materiel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajout_\Add_Ticket.resx">
+      <DependentUpon>Add_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajout_\Add_User.resx">
+      <DependentUpon>Add_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_\Incident_\Incident.resx">
+      <DependentUpon>Incident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_\List_\List_User.resx">
+      <DependentUpon>List_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modif_\Mod_Equip.resx">
+      <DependentUpon>Mod_Equip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modif_\Mod_Ticket.resx">
+      <DependentUpon>Mod_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main_\Incident_\Resolution.resx">
+      <DependentUpon>Resolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="gsbassistanceDataSet.xsc">
+      <DependentUpon>gsbassistanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gsbassistanceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gsbassistanceDataSet.xss">
+      <DependentUpon>gsbassistanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet11.xsc">
+      <DependentUpon>gsbassistanceDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gsbassistanceDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gsbassistanceDataSet11.xss">
+      <DependentUpon>gsbassistanceDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet21.xsc">
+      <DependentUpon>gsbassistanceDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gsbassistanceDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gsbassistanceDataSet21.xss">
+      <DependentUpon>gsbassistanceDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet3.xsc">
+      <DependentUpon>gsbassistanceDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gsbassistanceDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gsbassistanceDataSet3.xss">
+      <DependentUpon>gsbassistanceDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet4.xsc">
+      <DependentUpon>gsbassistanceDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="gsbassistanceDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gsbassistanceDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gsbassistanceDataSet4.xss">
+      <DependentUpon>gsbassistanceDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

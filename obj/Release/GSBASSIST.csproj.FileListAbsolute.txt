@@ -1,0 +1,15 @@
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.csproj.GSBASSIST.exe.config
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Add_Equip.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Add_Materiel.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Add_Ticket.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Add_User.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Home.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Incident.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.List_User.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Login.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Mod_Equip.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Mod_Ticket.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Properties.Resources.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.Resolution.resources
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\obj\Release\GSBASSIST.csproj.GenerateResource.Cache
+C:\Users\Albert\Documents\Visual Studio 2015\Projects\GSBASSIST\GSBASSIST\bin\Release\GSBASSIST.exe.config
